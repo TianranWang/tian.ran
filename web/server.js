@@ -3,11 +3,13 @@ const conf   = require('./conf');
 const app    = require('express')();
 const path   = require('path');
 
+const port   = conf.web.port;
+
 app.get('/', (req, res) => {
     res.render('index');
 });
 
-app.listen(8080, () => {
+app.listen(port, () => {
     app.set('view engine', 'pug');
     app.set('views', path.join(__dirname, './views'));
     console.log('started');
