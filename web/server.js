@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
     app.set('view engine', 'pug');
     app.set('views', path.join(__dirname, './views'));
-    console.log('started');
+    console.log('started on port ' + port);
 });
 
 logger.createLogger({name: 'tian.ran'});

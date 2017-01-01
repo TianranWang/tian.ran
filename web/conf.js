@@ -1,5 +1,2 @@
-module.exports = require('rc')('tian.ran', {
-   web: {
-       port: 8080
-   }
+module.exports = require('rc')('ran', {
 });
